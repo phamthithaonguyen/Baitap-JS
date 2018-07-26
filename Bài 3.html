@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+<p> Đề bài: Viết chương trình nhập vào một dãy các số, in ra dãy số ấy đã được sắp xếp từ nhỏ đến lớn
+    </p>
+    </head>
+    <body>
+        <script>
+        var n = [1,5,7,3];
+            k = n.length;
+           
+        for (var j =0; j<k; j++)
+        for (var i = 0; i < k; i++){
+            if (n[i] > n[i+1]) {
+                var a = n[i];
+                n[i] = n[i+1];
+                n[i+1] = a;
+            }
+        }
+        document.write(n.join());
+        </script>
+    </body>
+</html>
